@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+              tools:context=".fingerprint.FingerprintActivity">
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_fingerprint"
+            android:id="@+id/icon"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="24sp"
+            android:text="@string/title_fingerprint"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/desc"
+            android:text="@string/desc_fingerprint"
+            android:layout_margin="16dp"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/errorText"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:id="@+id/errorText"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|bottom"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimaryDark"
+                android:textSize="12sp"
+                android:text="@string/note"
+                android:textAlignment="center"/>
+    </LinearLayout>
+
+</LinearLayout>
